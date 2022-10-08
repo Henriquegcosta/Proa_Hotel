@@ -8,6 +8,6 @@
 <h3 align="center">Projeto feito no curso do Instituto Proa</h3>
 <h3 align="center">Contatos:</h3>
 <p align="center">
-<a href="https://linkedin.com/in/henrique gonçalves costa" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="henrique gonçalves costa" height="30" width="40" /></a>
+<a href="https://linkedin.com/in/henriquegcosta" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="henriquegonçalvescosta" height="30" width="40" /></a>
 </p>
 
