@@ -1,4 +1,4 @@
-# Hotel
+<h1 align="center" style="font-weight: bold;font-size:2rem;">Hotel<h1>
 <h1 align="center">Hi 👋, I'm Henrique</h1>
 <h3 align="center">Projeto feito no curso do Instituto Proa</h3>
 
