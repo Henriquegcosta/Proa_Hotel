@@ -1,6 +1,8 @@
-<h1 align="center" style="font-weight: bold;font-size:2rem;">Hotel</h1>
-<h3 align="left">Linguagens Utilizadas:</h3>
-<p align="left"> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/></p>
+<h1 align="center" style="font-weight: bold;font-size:2rem;">Hotel
+<h3 align="center">Linguagens Utilizadas:</h3>
+</h1>
+
+<p align="center"> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/></p>
 
 <h2 align="center">Hi 👋, I'm Henrique</h2>
 <h3 align="center">Projeto feito no curso do Instituto Proa</h3>
