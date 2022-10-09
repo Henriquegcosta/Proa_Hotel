@@ -13,9 +13,10 @@
 		
 
 		var hospede_lista = [];
-        var i = 0;
+		var i = 0;
         var nomehotel = prompt("Qual o nome do hotel?")
         alert("O nome do hotel é " + nomehotel);
+		var p = 0;
 
         //faz a autenticaçao do usuario e é definido o valor da senha
         var usuario = prompt("---Autenticaçao---\n Usuario: ");
@@ -40,7 +41,7 @@
 		function inicio() {
 			
 
-			var escolha = parseInt(prompt('Bem vindo ao Hotel ' + nomehotel + ',' + usuario + ' É um imenso prazer ter você por aqui!\nSelecione uma opção\n 1.) Reserva de Quartos\n 2.) Cadastro de Hóspedes\n 3.) Pesquisar e cadastrar hospedes \n 4.) Contrate Eventos\n 5.) Hora de Comer \n 6.) Alugar Auditorio \n 7.) Reservar Restaurante \n 8.) Abastecimento de Carros\n 9.) Sair'));
+			var escolha = parseInt(prompt('Bem vindo ao Hotel ' + nomehotel + ',' + usuario + ' É um imenso prazer ter você por aqui!\nSelecione uma opção\n 1.) Reserva de Quartos\n 2.) Cadastro de Hóspedes\n 3.) Pesquisar e cadastrar hospedes \n 4.) Contrate Eventos\n 5.) Hora de Comer \n 6.) Alugar Auditorio \n 7.) Reservar Restaurante \n 8.) Abastecimento de Carros\n 9.) Manutençao aparelhos \n 10.) Sair'));
 
 			switch(escolha){
 				case 1:
@@ -68,6 +69,9 @@
 					abastecer_carros();
 					break;
 				case 9:
+					manutencao_ar();
+					break;
+				case 10:
 					sair();
 					break;
 				default:
@@ -169,9 +173,6 @@
 		
 			}
 			var wayne_porcentagem = 100 - valores_wayne['total'];
-			console.log(valores_wayne['alcool']);
-			console.log(valores_wayne['gasolina']);
-			console.log(wayne_porcentagem);
 
 			var valor_alcool_2 = parseFloat(prompt(`Qual o valor do alcool no posto ${nomes['stark']}?`));
 			var valor_gasolina_2 = parseFloat(prompt(`Qual o valor da gasolina no posto ${nomes['stark']}?`));
@@ -181,9 +182,6 @@
 				'total': parseInt((valor_alcool_2 * 100) / valor_gasolina_2)
 			}
 			var stark_porcentagem = 100 - valores_wayne['total'];
-			console.log(valores_stark['alcool']);
-			console.log(valores_stark['gasolina']);
-			console.log(stark_porcentagem);
 
 			if(wayne_porcentagem >= 30){ // verifica se o alcool esta 30% mais barato que a gasolina
 				if(wayne_porcentagem < stark_porcentagem){ //verifica se o alcool do posto wayne esta mais barato que o posto stark
@@ -204,7 +202,7 @@
 		}
 
 		function erro() {
-			alert('Por favor, informe um número entre 1 e 9');
+			alert('Por favor, informe um número entre 1 e 10');
 			inicio();
 		}
 
@@ -435,6 +433,56 @@
 
 
 		}
+		
+		
+
+		function manutencao_ar(){
+			var nome_empresas = [];
+			var valor_produtos = [];
+        	var i = 0;
+			var e = 0;
+
+			while(i < 1){
+				
+				var nome_empresa = prompt("Qual o nome da empresa?");
+				nome_empresas.push(nome_empresa);
+				var valor_aparelho = parseInt(prompt("Qual o valor por aparelho?"));
+				var quantidade = parseInt(prompt("Qual a quantidade de aparelhos?"));
+				var porcentagem = parseInt(prompt("Qual a porcentagem de desconto?"));
+				var num_min = parseInt(prompt("Qual o numero minimo de aparelhos para ter desconto?"));
+				var valor = valor_aparelho * quantidade;
+				var desconto = (100 - porcentagem) / 100;
+				var valor_descontado = valor * desconto;
+				valor_produtos.push(valor_descontado);
+				var min = Math.min(...valor_produtos)
+
+				if(valor_descontado == min){
+					e++;
+				}
+
+				alert(`O serviço de ${nome_empresa} custará R$${valor}`);
+				var pesquisa = prompt(`Deseja introduzir novos dados, ${usuario}? S/N`)
+
+				if(pesquisa == "S"){
+
+				} else if (pesquisa == "N"){
+					i++;
+				} else {
+					alert("Insira apenas S ou N");
+					manutencao_ar();
+				}
+
+			}
+
+			var pegar_nome_empresa = nome_empresas[e - 1];
+
+			alert(`O orçamento de menor valor é o [${pegar_nome_empresa} por R$${min.toFixed(2)}]`);
+			inicio();
+
+
+
+		}
+			
 
 
 
