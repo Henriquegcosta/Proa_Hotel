@@ -183,7 +183,7 @@
 			}
 			var stark_porcentagem = 100 - valores_wayne['total'];
 
-			if(wayne_porcentagem >= 30){ // verifica se o alcool esta 30% mais barato que a gasolina
+			if(wayne_porcentagem >= 30 || stark_porcentagem >= 30){ // verifica se o alcool esta 30% mais barato que a gasolina
 				if(wayne_porcentagem < stark_porcentagem){ //verifica se o alcool do posto wayne esta mais barato que o posto stark
 					alert(usuario + ", é mais barato abastecer com alcool no posto " + nomes['stark']);
 					inicio();
