@@ -6,7 +6,7 @@
 
 <h2 align="center">Hi 👋, I'm Henrique</h2>
 <h3 align="center">Projeto feito no curso do Instituto Proa</h3>
-<h3 align="center">Para acessar:<a href="https://henriquegcosta.github.io/Proa_Hotel/">Clique Aqui</a> </h3>
+<h3 align="center">Para acessar:<a href="https://henriquegcosta.github.io/Proa_Hotel/">Clique Aqui</a> Senha: 2678 </h3>
 <h3 align="center">Contatos:</h3>
 <p align="center">
 <a href="https://linkedin.com/in/henriquegcosta" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="henriquegonçalvescosta" height="30" width="40" /></a>
